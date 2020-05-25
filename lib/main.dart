@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
       weightController.text = "";
       heightController.text = "";
       _infoText = "Informe seus dados!";
-      _formKey  = GlobalKey<FormState>();
+      _formKey = GlobalKey<FormState>();
     });
   }
 
@@ -111,7 +111,7 @@ class _HomeState extends State<Home> {
                     height: 50.0,
                     child: RaisedButton(
                       onPressed: () {
-                        if(_formKey.currentState.validate()){
+                        if (_formKey.currentState.validate()) {
                           _calculate();
                         }
                       },
